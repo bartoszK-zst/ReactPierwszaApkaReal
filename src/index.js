@@ -4,11 +4,28 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Bird from './components/Bird';
+
+const birds = [
+  {color: "red", migratesForWinter: false},
+  {color: "blue", migratesForWinter: true},
+  {color: "yellow", migratesForWinter: true},
+  {color: "brown", migratesForWinter: false},
+  {color: "pink", migratesForWinter: false},
+  {color: "purple", migratesForWinter: true}
+];
+
+//<React.StrictMode>
+//    <App />
+//</React.StrictMode>
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+  <ul>
+    {birds.map((bird) => <Bird color={bird.color} migratesForWinter={bird.migratesForWinter}/>)}
+  </ul>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

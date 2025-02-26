@@ -7,12 +7,12 @@ import reportWebVitals from './reportWebVitals';
 import Bird from './components/Bird';
 
 const birds = [
-  {color: "red", migratesForWinter: false},
-  {color: "blue", migratesForWinter: true},
-  {color: "yellow", migratesForWinter: true},
-  {color: "brown", migratesForWinter: false},
-  {color: "pink", migratesForWinter: false},
-  {color: "purple", migratesForWinter: true}
+  {color: "red", migratesForWinter: false, hasLegs: true},
+  {color: "blue", migratesForWinter: true, hasLegs: true},
+  {color: "yellow", migratesForWinter: true, hasLegs: true},
+  {color: "brown", migratesForWinter: false, hasLegs: true},
+  {color: "pink", migratesForWinter: false, hasLegs: true},
+  {color: "purple", migratesForWinter: true, hasLegs: false}
 ];
 
 //<React.StrictMode>
@@ -23,7 +23,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
   <ul>
-    {birds.map((bird) => <Bird color={bird.color} migratesForWinter={bird.migratesForWinter}/>)}
+    {birds.map((bird) => <Bird color={bird.color} migratesForWinter={bird.migratesForWinter} hasLegs={bird.hasLegs}/>)}
   </ul>
   </>
 );

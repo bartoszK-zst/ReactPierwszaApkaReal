@@ -10,10 +10,10 @@ import Bird from './components/Bird';
 //tablica danych Ptaków, z których wygenerowane zostaną znaczniki Bird
 const birds = [
   {color: "red", migratesForWinter: false, hasLegs: true},
-  {color: "blue", migratesForWinter: true, hasLegs: true},
+  {color: "blue", migratesForWinter: true, hasLegs: false},
   {color: "yellow", migratesForWinter: true, hasLegs: true},
   {color: "brown", migratesForWinter: false, hasLegs: true},
-  {color: "pink", migratesForWinter: false, hasLegs: true},
+  {color: "pink", migratesForWinter: false, hasLegs: false},
   {color: "purple", migratesForWinter: true, hasLegs: false}
 ];
 

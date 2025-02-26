@@ -4,8 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//importowany jest jedynie komponent Bird
 import Bird from './components/Bird';
 
+//tablica danych Ptaków, z których wygenerowane zostaną znaczniki Bird
 const birds = [
   {color: "red", migratesForWinter: false, hasLegs: true},
   {color: "blue", migratesForWinter: true, hasLegs: true},

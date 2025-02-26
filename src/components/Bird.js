@@ -1,3 +1,4 @@
+//musi importować komponent Legs
 import Legs from './Legs.js';
 function Bird(props){
     return <li>

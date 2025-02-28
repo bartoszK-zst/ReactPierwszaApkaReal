@@ -25,7 +25,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
   <ul>
-    {birds.map((bird) => <Bird color={bird.color} migratesForWinter={bird.migratesForWinter} hasLegs={bird.hasLegs}/>)}
+    {birds.map((bird) => <Bird key={bird.color} color={bird.color} migratesForWinter={bird.migratesForWinter} hasLegs={bird.hasLegs}/>)}
   </ul>
   </>
 );
